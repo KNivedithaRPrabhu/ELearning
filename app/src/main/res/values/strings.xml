@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">ELearningApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mobile_email">Mobile/Email</string>
+    <string name="password">Password</string>
+    <string name="sign_in">Sign in</string>
+    <string name="forgot_password"><u>Forgot Password</u></string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="signup"><u>Signup</u></string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="create_an_account">Create an Account</string>
+    <string name="name">Name</string>
+    <string name="create_password">Create Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="signin"><u>Signin</u></string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="verify_account">Verify Account</string>
+    <string name="enter_verification_tv">Enter verification code that we have sent to your email.</string>
+    <string name="otp1">6</string>
+    <string name="resend_tv">Resend</string>
+    <string name="subjects">Subjects</string>
+    <string name="onboarding1_tv">Learn from anywhere</string>
+    <string name="onboarding2_tv">User Friendly</string>
+    <string name="onboarding3_tv">Study Overview</string>
+    <string name="onboarding_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="get_started">Get Started</string>
+    <string name="skip"><u>Skip</u></string>
+    <string name="verify_tv">Verify</string>
+</resources>

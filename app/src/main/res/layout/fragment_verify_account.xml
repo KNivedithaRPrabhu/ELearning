@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fragmentFrameLayoutVerify"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/close_button_verify"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="32.2dp"
+                android:layout_marginTop="49dp"
+                android:src="@drawable/btn_cancel"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/verify_account_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="105dp"
+                android:text="@string/verify_account"
+                android:textAppearance="@style/VerifyAccount"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/description_verify_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="74dp"
+                android:text="@string/enter_verification_tv"
+                android:textAppearance="@style/EnterVerification"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/verify_account_tv" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="37.5dp"
+                android:layout_marginTop="121dp"
+                android:layout_marginEnd="37dp"
+                android:background="#FCFCFE"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/description_verify_tv">
+
+                <EditText
+                    android:id="@+id/otp1"
+                    android:layout_width="67dp"
+                    android:layout_height="67dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/otp_box"
+                    android:gravity="center"
+                    android:imeOptions="actionNone"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textAppearance="@style/OTP_Text" />
+
+                <EditText
+                    android:id="@+id/otp2"
+                    android:layout_width="67dp"
+                    android:layout_height="67dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/otp_box"
+                    android:gravity="center"
+                    android:imeOptions="actionNone"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:lineSpacingMultiplier="1.20"
+                    android:maxLength="1"
+                    android:textAppearance="@style/OTP_Text" />
+
+                <EditText
+                    android:id="@+id/otp3"
+                    android:layout_width="67dp"
+                    android:layout_height="67dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/otp_box"
+                    android:gravity="center"
+                    android:imeOptions="actionNone"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textAppearance="@style/OTP_Text" />
+
+                <EditText
+                    android:id="@+id/otp4"
+                    android:layout_width="67dp"
+                    android:layout_height="67dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginRight="36dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/otp_box"
+                    android:gravity="center"
+                    android:imeOptions="actionNone"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:textAppearance="@style/OTP_Text" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_resend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="34dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linear_layout_otp">
+
+                <TextView
+                    android:id="@+id/resend_suggestion_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Didn’t recieve a code?"
+                    android:textAppearance="@style/resend_suggestion" />
+
+                <TextView
+                    android:id="@+id/resend_bn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/Resend"
+                    android:textAppearance="@style/Resend" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/verify_tv"
+                android:layout_width="71dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="45dp"
+                android:text="@string/verify_tv"
+                android:textAppearance="@style/Verify"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linear_layout_resend" />
+
+            <ImageView
+                android:id="@+id/next_bn"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="167dp"
+                android:layout_marginTop="58dp"
+                android:layout_marginEnd="50dp"
+                android:src="@drawable/btn_signin"
+                app:layout_constraintStart_toEndOf="@id/verify_tv"
+                app:layout_constraintTop_toTopOf="@id/linear_layout_resend" />
+
+            <ImageView
+                android:id="@+id/next_bn_enable"
+                android:layout_width="85dp"
+                android:layout_height="85dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="167dp"
+                android:layout_marginTop="58dp"
+                android:layout_marginEnd="50dp"
+                android:src="@drawable/btn_signin_enable"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@id/verify_tv"
+                app:layout_constraintTop_toTopOf="@id/linear_layout_resend" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </FrameLayout>
+</ScrollView>
